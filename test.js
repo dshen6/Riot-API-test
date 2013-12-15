@@ -35,7 +35,7 @@ function getIDFromResult(result) {
 
 function getSummonerLeagueStatsFromID(id) {
 	var requestString = leagueBySumIDRequest.replace('blah', id);
-	console.log(requestString);
+	//console.log(requestString);
 	https.get(requestString, function(res) {
 		res.on('data', function(chunk) {
 			console.log(chunk);
